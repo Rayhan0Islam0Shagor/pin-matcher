@@ -5,14 +5,16 @@ generateBtn.addEventListener('click', function () {
 
     document.getElementById('show-pin').value = generateRandomNumber;
 })
-function insert(num) {
-    document.getElementById('numView').value = document.getElementById('numView').value + num;
-}
+document.getElementById('submit').addEventListener('click', function () {
+    const showPin = document.getElementById('show-pin').value;
+    const numberView = document.getElementById('numView').value;
+    if (showPin === numberView) {
+        const submitOutput = document.getElementById('matched');
+        submitOutput.style.display = 'block';
+    }
+    if (showPin != numberView) {
+        const submitError = document.getElementById("doesn't match");
+        submitError.style.display = 'block';
 
-function deleteBtn() {
-    let inputValue = document.getElementById('dlt').value;
-    document.getElementById('dlt').value = inputValue.substring(0, inputValue.length - 1);
-}
-function clearBtn() {
-    document.getElementById('clr').value = "";
-}
+    }
+})

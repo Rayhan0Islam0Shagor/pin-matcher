@@ -25,27 +25,28 @@
                     <div class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
-                                <div class="button">7</div>
-                                <div class="button">8</div>
-                                <div class="button">9</div>
+                                <div class="button" onclick="numView.value+='7'">7</div>
+                                <div class="button" onclick="numView.value+='8'">8</div>
+                                <div class="button" onclick="numView.value+='9'">9</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button">4</div>
-                                <div class="button">5</div>
-                                <div class="button">6</div>
+                                <div class="button" onclick="numView.value+='4'">4</div>
+                                <div class="button" onclick="numView.value+='5'">5</div>
+                                <div class="button" onclick="numView.value+='6'">6</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button">1</div>
-                                <div class="button">2</div>
-                                <div class="button">3</div>
+                                <div class="button" onclick="numView.value+='1'">1</div>
+                                <div class="button" onclick="numView.value+='2'">2</div>
+                                <div class="button" onclick="numView.value+='3'">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div onclick="deleteBtn()" id="dlt" class="button">CE </div>
-                                <div onclick="insert(0)" class="button">0</div>
-                                <div onclick="clearBtn()" id="clr" class="button">C</div>
+                                <div class="button" onclick="numView.value=numView.value.slice(0,-1)">CE
+                                </div>
+                                <div class="button" onclick="numView.value+='0'">0</div>
+                                <div class="button" onclick="numView.value=''">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn">Submit</button>
+                                <button id="submit" type="submit" class="submit-btn">Submit</button>
                                 <p class="action-left">3 try left</p>
                             </div>
                         </div>

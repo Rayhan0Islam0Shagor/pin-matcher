@@ -40,9 +40,11 @@
                                 <div class="button" onclick="numView.value+='3'">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button" onclick="numView.value=numView.value.slice(0,-1)">Dlt </div>
+                                <div class="button CE" id="backspace" onclick="numView.value=numView.value.slice(0,-1)">
+                                    Dlt
+                                </div>
                                 <div class="button" onclick="numView.value+='0'">0</div>
-                                <div class="button" onclick="numView.value=''">C</div>
+                                <div class="button C" id="clear" onclick="numView.value=''">C</div>
                             </div>
                             <div>
                                 <button id="submit" type="submit" class="submit-btn">Submit</button>

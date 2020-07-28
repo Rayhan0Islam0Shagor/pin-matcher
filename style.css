@@ -25,6 +25,12 @@ body {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    transition: ease 0.5s;
+}
+.generate-btn:hover{
+    background-color: cyan;
+    color: black;
+    transform: scale(1.07);
 }
 .generate-btn:focus{
     outline: none;
@@ -74,6 +80,11 @@ vertical-align: middle;
 margin-right: -4px;
 border-radius: 10px;
 cursor: pointer;
+transition: ease 0.5s;
+}
+.button:hover{
+    background-color: rgb(0, 255, 191);
+    color: black;
 }
 .blink-me {
 color: #E0B612;
@@ -104,6 +115,11 @@ color: #E0B612;
 }
 #matched{
     display: none;
+}
+.C:hover, .CE:hover{
+    background-color: rgb(117, 0, 0);
+    color: aqua;
+    font-weight: 600;
 }
 .action-left {
     color: #FF3C5F;

@@ -41,25 +41,24 @@
                             </div>
                             <div class="calc-button-row">
                                 <div class="button CE" id="backspace" onclick="numView.value=numView.value.slice(0,-1)">
-                                    Dlt
+                                    < </div>
+                                        <div class="button" onclick="numView.value+='0'">0</div>
+                                        <div class="button C" id="clear" onclick="numView.value=''">C</div>
                                 </div>
-                                <div class="button" onclick="numView.value+='0'">0</div>
-                                <div class="button C" id="clear" onclick="numView.value=''">C</div>
-                            </div>
-                            <div>
-                                <button id="submit" type="submit" class="submit-btn">Submit</button>
-                                <p id="errorCounter" class="action-left">3 try left</p>
+                                <div>
+                                    <button id="submit" type="submit" class="submit-btn">Submit</button>
+                                    <p id="errorCounter" class="action-left">3 try left</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="notify-section">
+                    <p id="error" class="notify">❌ Pin Didn't Match, Please try again</p>
+                    <p id="matched" class="notify">✅ Pin Matched... Secret door is opening for you</p>
+                </div>
             </div>
-            <div class="notify-section">
-                <p id="error" class="notify">❌ Pin Didn't Match, Please try again</p>
-                <p id="matched" class="notify">✅ Pin Matched... Secret door is opening for you</p>
-            </div>
-        </div>
-        <script src="script.js"></script>
+            <script src="script.js"></script>
 </body>
 
 </html>

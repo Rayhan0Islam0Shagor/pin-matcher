@@ -55,18 +55,15 @@ input[type='text']:focus {
 .numbers {
     margin: 30px 0;
 }
-
 .calc-typed {
 margin-top: 20px;
 font-size: 45px;
 text-align: right;
 color: #fff;
 }
-
 .calc-button-row {
 width: 100%;
 }
-
 .button {
 width: 20%;
 background: #425062;
@@ -96,6 +93,13 @@ color: #E0B612;
     border-radius: 5px;
     background: #495BC3;
     color: #fff;
+    transition: ease 0.5s;
+}
+.submit-btn:hover{
+    background-color: cyan;
+    color: black;
+    transform: scale(1.05);
+    font-weight: 700;
 }
 .notify {
     color: #fff;

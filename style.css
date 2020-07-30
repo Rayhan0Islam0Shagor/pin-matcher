@@ -95,6 +95,9 @@ color: #E0B612;
     color: #fff;
     transition: ease 0.5s;
 }
+#submit{
+    display: inline-block;
+}
 .submit-btn:hover{
     background-color: cyan;
     color: black;

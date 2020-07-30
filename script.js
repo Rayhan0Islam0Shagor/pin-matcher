@@ -42,6 +42,10 @@ function chanceCounter() {
   if (chance.innerText == 0) {
     var removeSubmit = document.getElementById('submit');
     removeSubmit.style.display = "none";
+    const errorCounter = document.getElementById("errorCounter");
+    errorCounter.style.display = "none";
+    const specialMessage = document.getElementById('extra-message');
+    specialMessage.style.display = "block";
   }
 }
 

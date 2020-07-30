@@ -44,8 +44,11 @@ function chanceCounter() {
     removeSubmit.style.display = "none";
     const errorCounter = document.getElementById("errorCounter");
     errorCounter.style.display = "none";
-    const specialMessage = document.getElementById('extra-message');
+    const specialMessage = document.getElementById('extra-message'); //just for better look
     specialMessage.style.display = "block";
+  }
+  if (chance.innerText == 1) {
+    alert('Hey! Mr. you have only one chance. So becareful!');
   }
 }
 

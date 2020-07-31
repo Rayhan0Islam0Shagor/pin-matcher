@@ -48,7 +48,7 @@ function chanceCounter() {
     specialMessage.style.display = "block";
   }
   if (chance.innerText == 1) {
-    alert('Hey! Mr. you have only one chance. So becareful!');
+    alert('Hey! You have only one chance left. So becareful!');
   }
 }
 

@@ -15,35 +15,37 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="pin-generator half-width">
-                    <input id="show-pin" class="form-control text-center" placeholder="Generate Pin" type="text">
+                    <input id="pin-output" class="form-control text-center" placeholder="Generate Pin" type="text">
                     <button id="generate-pin" class="generate-btn">Generate Pin</button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input id="numView" class="form-control  text-center" placeholder="insert your pin" type="text">
+                    <input id="numberOutput" class="form-control  text-center" placeholder="insert your pin"
+                        type="text">
                     <div class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
-                                <div class="button" onclick="numView.value+='7'">7</div>
-                                <div class="button" onclick="numView.value+='8'">8</div>
-                                <div class="button" onclick="numView.value+='9'">9</div>
+                                <div class="button" onclick="numberOutput.value+='7'">7</div>
+                                <div class="button" onclick="numberOutput.value+='8'">8</div>
+                                <div class="button" onclick="numberOutput.value+='9'">9</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button" onclick="numView.value+='4'">4</div>
-                                <div class="button" onclick="numView.value+='5'">5</div>
-                                <div class="button" onclick="numView.value+='6'">6</div>
+                                <div class="button" onclick="numberOutput.value+='4'">4</div>
+                                <div class="button" onclick="numberOutput.value+='5'">5</div>
+                                <div class="button" onclick="numberOutput.value+='6'">6</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button" onclick="numView.value+='1'">1</div>
-                                <div class="button" onclick="numView.value+='2'">2</div>
-                                <div class="button" onclick="numView.value+='3'">3</div>
+                                <div class="button" onclick="numberOutput.value+='1'">1</div>
+                                <div class="button" onclick="numberOutput.value+='2'">2</div>
+                                <div class="button" onclick="numberOutput.value+='3'">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button CE" id="backspace" onclick="numView.value=numView.value.slice(0,-1)">
+                                <div class="button CE" id="backspace"
+                                    onclick="numberOutput.value=numberOutput.value.slice(0,-1)">
                                     < </div>
-                                        <div class="button" onclick="numView.value+='0'">0</div>
-                                        <div class="button C" id="clear" onclick="numView.value=''">C</div>
+                                        <div class="button" onclick="numberOutput.value+='0'">0</div>
+                                        <div class="button C" id="clear" onclick="numberOutput.value=''">C</div>
                                 </div>
                                 <div>
                                     <button id="submit" type="submit" class="submit-btn">Submit</button>
